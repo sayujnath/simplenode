@@ -92,7 +92,7 @@ const server = http.createServer(async (req,res) => {
     res.write(`
     <body>
         <h2 class="header">${title}</h2></p>
-        <h3 class="subheader">Test results</h3></p>
+        <h3 class="subheader">Serve connectivity test results</h3></p>
         <table class="styled-table">
             <thead>
                 <tr>
