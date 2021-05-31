@@ -3,9 +3,9 @@ const http = require('http');
 const PORT = parseInt(process.env.PORT) || 3000;
 
 const ports = {
-    prod : 3000,
-    dev : 4000,
-    test : 5000
+    prod : 13000,
+    dev : 14000,
+    test : 15000
 }
 
 
@@ -119,7 +119,7 @@ server.listen(PORT);
 
 
 async function test_sequence()    {
-    results = await result_row(test_internet_access("http://google.com"));
+    results = await result_row(test_internet_access("https://google.com"));
     results = results + await result_row(test_internet_access("www.google.com"));
     results = results + await result_row(test_internet_access("www.google.com"));
     results = results + await result_row(test_internet_access("www.google.com"));
