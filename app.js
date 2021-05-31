@@ -29,6 +29,7 @@ const server = http.createServer(async (req,res) => {
     console.log(req.url, req.method, req.headers);
     //process.exit();
     body = await test_sequence();
+    res.statusCode = 200;
     res.setHeader('Content-Type', 'text/html');
     res.write('<html>');
     res.write(`
