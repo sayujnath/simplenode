@@ -17,7 +17,7 @@ switch (PORT) {
         title = 'Production Server';
         break;
     case ports.dev:
-        title = 'Development Server';
+        title = 'SimpleNode Development Server';
         break;
     case ports.test:
         title = 'Test Server';
