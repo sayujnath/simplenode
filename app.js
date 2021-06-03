@@ -14,13 +14,13 @@ var title, body;
     
 switch (PORT) {
     case ports.prod:
-        title = 'Production Server';
+        title = 'SimpleNode Production Server';
         break;
     case ports.dev:
         title = 'SimpleNode Development Server';
         break;
     case ports.test:
-        title = 'Test Server';
+        title = 'SimpleNode Test Server';
         break;
 }
 
