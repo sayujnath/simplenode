@@ -9,7 +9,7 @@ permissions:
     group: ec2-user
 hooks:
   BeforeInstall:
-    - location: donothing.sh
+    - location: stop_server.sh
       timeout: 20
       runas: ec2-user
   AfterInstall:
