@@ -7,7 +7,7 @@ permissions:
   - object: /usr/local/share/applications/simplenode
     owner: ec2-user
     group: ec2-user
-Hooks:
-    -ApplicationStart: sh run_server.sh
+hooks:
+    -ApplicationStart: run_server.sh
     timeout: 20
     runas: ec2-user
