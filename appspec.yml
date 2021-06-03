@@ -10,13 +10,16 @@ permissions:
 hooks:
   BeforeInstall:
     - location: /usr/local/share/applications/simplenode/donothing.sh
-    - location: /usr/local/share/applications/simplenode/donothing.sh
+      timeout: 20
+      runas: ec2-user
   AfterInstall:
     - location: /usr/local/share/applications/simplenode/donothing.sh
       timeout: 20
+      runas: ec2-user
   ApplicationStart:
     - location: /usr/local/share/applications/simplenode/run_server.sh
       timeout: 20
+      runas: ec2-user
   ValidateService:
     - location: /usr/local/share/applications/simplenode/donothing.sh
       timeout: 20
