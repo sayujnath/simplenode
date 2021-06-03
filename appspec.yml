@@ -8,4 +8,6 @@ permissions:
     owner: ec2-user
     group: ec2-user
 Hooks:
-    -AfterInstall: /usr/local/share/applications/simplenode/appspec.yml
+    -AfterInstall: /usr/local/share/applications/simplenode/afterinstall.sh
+    timeout: 20
+    runas: ec2-user
